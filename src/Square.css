@@ -1,0 +1,47 @@
+.square {
+    border-radius: 14px;
+    border-style: none;
+    color: #fff;
+    display: inline-block;
+    height: 140px;
+    margin: 5px;
+    text-align: center;
+    width: 140px;
+}
+
+.square .fa {
+    font-size: 75px;
+}
+
+.square.open {
+    background-color: #78bec5;
+    color: #b6b5ca;
+    transition: background-color .3s;
+}
+
+.square.open .fa {
+    visibility: hidden;
+}
+
+.square.open:hover {
+    background-color: #3d4250;
+    cursor: pointer;
+}
+
+.square.open:hover .fa,
+.square.open + .fa:hover {
+    visibility: visible;
+}
+
+.square.X {
+    background-color: #dc685a;
+}
+
+.square.O {
+    background-color: #ecaf4f;
+}
+
+.square.X .fa,
+.square.O .fa {
+    margin-top: 32px;
+}

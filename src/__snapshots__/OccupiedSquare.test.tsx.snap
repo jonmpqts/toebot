@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders first player 1`] = `
+<div
+  className="square X"
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-times"
+  />
+</div>
+`;
+
+exports[`renders second player 1`] = `
+<div
+  className="square O"
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-circle-o"
+  />
+</div>
+`;

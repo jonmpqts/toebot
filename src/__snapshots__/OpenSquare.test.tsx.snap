@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders first player 1`] = `
+<button
+  className="square open"
+  onClick={undefined}
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-times"
+  />
+</button>
+`;
+
+exports[`renders second player 1`] = `
+<button
+  className="square open"
+  onClick={undefined}
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-circle-o"
+  />
+</button>
+`;

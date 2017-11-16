@@ -1,20 +1,39 @@
 import * as React from 'react';
-import './App.css';
+import Board from './Board';
 
-const logo = require('./logo.svg');
+interface State {
+  currentPlayer: 'X' | 'O';
+  boardState: string;
+}
 
-class App extends React.Component {
+class App extends React.Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+
+    this.state = {
+      currentPlayer: 'X',
+      boardState: '.........',
+    };
+
+    this.handleSquareClick = this.handleSquareClick.bind(this);
+  }
+
+  handleSquareClick(id: number) {
+    let newBoardState = this.state.boardState.split('');
+    newBoardState[id] = this.state.currentPlayer;
+    this.setState({
+      currentPlayer: this.state.currentPlayer === 'X' ? 'O' : 'X',
+      boardState: newBoardState.join(''),
+    });
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <Board
+        currentPlayer={this.state.currentPlayer}
+        state={this.state.boardState}
+        onSquareClick={this.handleSquareClick}
+      />
     );
   }
 }
