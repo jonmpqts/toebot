@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`draw 1`] = `
+<div
+  className="gameover"
+>
+  <h2>
+    It is a tie!
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Restart
+  </button>
+</div>
+`;
+
+exports[`first player wins 1`] = `
+<div
+  className="gameover"
+>
+  <h2>
+    Player 1 wins!
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Restart
+  </button>
+</div>
+`;
+
+exports[`second player wins 1`] = `
+<div
+  className="gameover"
+>
+  <h2>
+    Player 2 wins!
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Restart
+  </button>
+</div>
+`;
