@@ -7,11 +7,6 @@ export interface SquareOccupied {
     squareNumber: number;
 }
 
-export interface SquareOccupiedParams {
-    player: 'X' | 'O';
-    squareNumber: number;
-}
-
 export const occupySquare =
     createAction<SquareOccupied, 'X' | 'O', number>(
         SQUARE_OCCUPIED,
