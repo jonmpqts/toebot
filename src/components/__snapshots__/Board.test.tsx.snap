@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`empty board 1`] = `
+<div
+  className="board"
+>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </button>
+</div>
+`;
+
+exports[`second player move 1`] = `
+<div
+  className="board"
+>
+  <div
+    className="square X"
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-times"
+    />
+  </div>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+  <button
+    className="square open"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-circle-o"
+    />
+  </button>
+</div>
+`;
