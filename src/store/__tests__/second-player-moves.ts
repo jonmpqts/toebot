@@ -2,7 +2,8 @@ import reducer, { initialState } from '../reducer';
 import { occupySquare } from '../actions';
 import {
     getCurrentPlayer,
-    getBoardState
+    getBoardState,
+    getWinner
 } from '../selectors';
 
 const state = reducer(
@@ -18,4 +19,8 @@ test('X is current player', () => {
 
 test('board occupied by O', () => {
     expect(getBoardState(state)).toEqual('XO.......');
+});
+
+test('game not over', () => {
+    expect(getWinner(state)).toEqual(null);
 });

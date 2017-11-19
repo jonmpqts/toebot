@@ -1,89 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<div
-  className="board"
->
-  <button
-    className="square open"
-    onClick={[Function]}
+<div>
+  <div
+    className="board"
   >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
-  <button
-    className="square open"
-    onClick={[Function]}
-  >
-    <span
-      aria-hidden={true}
-      className="fa fa-times"
-    />
-  </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+    <button
+      className="square open"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-times"
+      />
+    </button>
+  </div>
 </div>
 `;

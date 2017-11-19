@@ -2,32 +2,55 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch, Store } from 'redux';
 import Board from './Board';
-import { State, occupySquare, getCurrentPlayer, getBoardState } from '../store';
+import GameOver from './GameOver';
+import {
+  State,
+  occupySquare,
+  getCurrentPlayer,
+  getBoardState,
+  getWinner
+} from '../store';
 
 interface Props {
   currentPlayer: 'X' | 'O';
   boardState: string;
+  winner: 'X' | 'O' | 'XO' | null;
   onSquareClick: (id: number) => void;
 }
 
-export const App = ({ currentPlayer, boardState, onSquareClick }: Props) => {
+export const App = ({
+  currentPlayer,
+  boardState,
+  winner,
+  onSquareClick
+}: Props) => {
+
+  const over = winner
+    ? <GameOver winner={winner} />
+    : null;
+
   return (
-    <Board
-      currentPlayer={currentPlayer}
-      state={boardState}
-      onSquareClick={onSquareClick}
-    />
+    <div>
+      <Board
+        currentPlayer={currentPlayer}
+        state={boardState}
+        onSquareClick={onSquareClick}
+      />
+      {over}
+    </div>
   );
 };
 
 interface StateProps {
   currentPlayer: 'X' | 'O';
   boardState: string;
+  winner: 'X' | 'O' | 'XO';
 }
 
 const mapStateToProps = (state: State) => ({
   currentPlayer: getCurrentPlayer(state),
-  boardState: getBoardState(state)
+  boardState: getBoardState(state),
+  winner: getWinner(state)
 });
 
 interface DispatchProps {
