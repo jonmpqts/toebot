@@ -3,9 +3,10 @@ import './GameOver.css';
 
 interface Props {
     winner: 'X' | 'O' | 'XO';
+    onRestartClick: () => void;
 }
 
-const GameOver = ({ winner }: Props) => {
+const GameOver = ({ winner, onRestartClick }: Props) => {
     const text = winner === 'XO'
         ? 'It is a tie!'
         : 'Player ' + (winner === 'X' ? '1' : '2') + ' wins!';
@@ -13,6 +14,7 @@ const GameOver = ({ winner }: Props) => {
     return (
         <div className="gameover">
             <h2>{text}</h2>
+            <button onClick={onRestartClick}>Restart</button>
         </div>
     );
 };

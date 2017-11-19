@@ -16,3 +16,18 @@
     font-size: 40px;
     font-weight: 300;
 }
+
+.gameover button {
+    background-color: #3d4250;
+    border-radius: 4px;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 14px 45px;
+    transition: background-color .2s;
+}
+
+.gameover button:hover {
+    background-color: #262934;
+}

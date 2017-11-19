@@ -20,6 +20,9 @@ const currentPlayer = handleActions<'X' | 'O', actions.SquareOccupied>(
             }
 
             return state === 'X' ? 'O' : 'X';
+        },
+        [actions.GAME_RESTARTED]: (state, action) => {
+            return 'X';
         }
     },
     initialState.currentPlayer
@@ -35,6 +38,9 @@ const boardState = handleActions<string, actions.SquareOccupied>(
             const a = state.split('');
             a[action.payload.squareNumber] = action.payload.player;
             return a.join('');
+        },
+        [actions.GAME_RESTARTED]: (state, action) => {
+            return '.........';
         }
     },
     initialState.boardState);

@@ -6,6 +6,7 @@ import GameOver from './GameOver';
 import {
   State,
   occupySquare,
+  restartGame,
   getCurrentPlayer,
   getBoardState,
   getWinner
@@ -16,17 +17,19 @@ interface Props {
   boardState: string;
   winner: 'X' | 'O' | 'XO' | null;
   onSquareClick: (id: number) => void;
+  onRestartClick: () => void;
 }
 
 export const App = ({
   currentPlayer,
   boardState,
   winner,
-  onSquareClick
+  onSquareClick,
+  onRestartClick
 }: Props) => {
 
   const over = winner
-    ? <GameOver winner={winner} />
+    ? <GameOver winner={winner} onRestartClick={onRestartClick} />
     : null;
 
   return (
@@ -55,11 +58,14 @@ const mapStateToProps = (state: State) => ({
 
 interface DispatchProps {
   onSquareClick: (player: 'X' | 'O', squareNumber: number) => void;
+  onRestartClick: () => void;
 }
 
 const mapDispatchToProps = (dispatch: Dispatch<Store<State>>) => ({
   onSquareClick: (player: 'X' | 'O', squareNumber: number) =>
-    dispatch(occupySquare(player, squareNumber))
+    dispatch(occupySquare(player, squareNumber)),
+  onRestartClick: () =>
+    dispatch(restartGame())
 });
 
 interface OwnProps {}

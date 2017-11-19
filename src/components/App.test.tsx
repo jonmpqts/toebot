@@ -9,6 +9,7 @@ it('renders without crashing', () => {
       boardState="........."
       winner={null}
       onSquareClick={() => { return; }}
+      onRestartClick={() => { return; }}
     />
   );
 
