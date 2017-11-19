@@ -1,8 +1,11 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import App from './App';
+import * as renderer from 'react-test-renderer';
+import { App } from './App';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  const component = renderer.create(
+    <App currentPlayer="X" boardState="........." onSquareClick={() => { return; }} />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
 });
