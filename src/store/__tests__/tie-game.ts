@@ -1,8 +1,6 @@
 import reducer, { initialState } from '../reducer';
 import { occupySquare } from '../actions';
 import {
-    getCurrentPlayer,
-    getBoardState,
     getWinner
 } from '../selectors';
 
